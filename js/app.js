@@ -132,7 +132,7 @@ function setupCategoryButtons() {
 function setupWhatsAppButton() {
     document.getElementById('whatsappButton').addEventListener('click', function(e) {
         e.preventDefault();
-        const phone = "5192866585";
+        const phone = "51928669585";
         const message = "¡Hola JoyShop! Estoy interesado/a en sus productos, ¿me podrían ayudar?";
         window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
     });
