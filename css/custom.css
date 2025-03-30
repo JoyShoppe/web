@@ -1,0 +1,81 @@
+/* Animaciones personalizadas */
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    25% { transform: scale(1.1); }
+    50% { transform: scale(1); }
+    75% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.animate-heartbeat {
+    animation: heartbeat 1.5s ease infinite;
+}
+
+/* Efecto shine para productos */
+.product-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        rgba(255,255,255,0) 0%,
+        rgba(232,217,181,0.1) 50%,
+        rgba(255,255,255,0) 100%
+    );
+    transition: all 0.6s ease;
+    z-index: 1;
+}
+
+.product-card:hover::after {
+    left: 100%;
+}
+
+/* Estilos para el carrusel de categorías */
+.categories-scroll {
+    scrollbar-width: thin;
+    scrollbar-color: #c0a062 #f9f8f6;
+}
+
+.categories-scroll::-webkit-scrollbar {
+    height: 4px;
+}
+
+.categories-scroll::-webkit-scrollbar-track {
+    background: #f9f8f6;
+    border-radius: 2px;
+}
+
+.categories-scroll::-webkit-scrollbar-thumb {
+    background-color: #c0a062;
+    border-radius: 2px;
+}
+
+/* Efectos hover para redes sociales */
+.social-icon {
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Footer degradado */
+footer {
+    background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    .category-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+    
+    .category-btn i {
+        margin-right: 0.25rem;
+    }
+}

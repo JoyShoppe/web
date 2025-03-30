@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JoyShop | Catálogo de Joyería para Parejas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#c0a062', // Oro cálido
+                        secondary: '#2d2d2d', 
+                        accent: '#e8d9b5',
+                        light: '#f9f8f6',
+                        dark: '#1e1e1e',
+                        whatsapp: '#128C7E',
+                        love: '#e63946', // Toque romántico
+                        social: '#5a5a5a'
+                    },
+                    fontFamily: {
+                        sans: ['"Open Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                        romantic: ['"Great Vibes"', 'cursive']
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'fade-in': 'fadeIn 1s ease-out',
+                        'soft-pulse': 'softPulse 4s infinite',
+                        'gentle-bounce': 'gentleBounce 3s infinite',
+                        'heartbeat': 'heartbeat 1.5s ease infinite'
+                    },
+                    keyframes: {
+                        heartbeat: {
+                            '0%': { transform: 'scale(1)' },
+                            '25%': { transform: 'scale(1.1)' },
+                            '50%': { transform: 'scale(1)' },
+                            '75%': { transform: 'scale(1.1)' },
+                            '100%': { transform: 'scale(1)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="font-sans bg-light text-dark">
+    <!-- Header elegante -->
+    <header class="bg-white py-4 px-6 shadow-sm sticky top-0 z-50 animate-fade-in">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <i class="fas fa-heart text-love mr-2 text-xl animate-heartbeat"></i>
+                <h1 class="text-xl font-romantic text-secondary">JoyShop</h1>
+            </div>
+            <a href="#" class="bg-primary text-white px-4 py-2 rounded-full text-sm flex items-center hover:bg-opacity-90 transition-all">
+                <i class="fab fa-whatsapp mr-2"></i> Contactar
+            </a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8 max-w-4xl">
+        <!-- Sección hero con contador animado -->
+        <section class="text-center mb-12 animate-fade-in">
+            <div class="w-24 h-24 rounded-full border-2 border-accent mx-auto overflow-hidden mb-4 shadow-md">
+                <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" 
+                     alt="Logo" class="w-full h-full object-cover">
+            </div>
+            <h2 class="text-2xl font-romantic text-secondary mb-2">@JoyShop</h2>
+            <p class="text-gray-600 mb-6">Joyería que celebra el amor • Pedidos por WhatsApp</p>
+            
+            <div class="bg-accent bg-opacity-30 rounded-lg py-2 px-4 inline-block animate-soft-pulse">
+                <p class="text-dark text-sm font-medium">
+                    <i class="fas fa-heart text-love mr-1 animate-heartbeat"></i> 
+                    <span class="counter" data-target="120">0</span> parejas felices
+                </p>
+            </div>
+        </section>
+
+        <!-- Redes sociales elegantes -->
+        <div class="grid grid-cols-4 gap-2 mb-12">
+            <a href="#" class="social-icon bg-white p-3 rounded-full shadow flex items-center justify-center hover:shadow-md transition-all">
+                <i class="fab fa-instagram text-social hover:text-primary"></i>
+            </a>
+            <a href="#" class="social-icon bg-white p-3 rounded-full shadow flex items-center justify-center hover:shadow-md transition-all">
+                <i class="fab fa-facebook-f text-social hover:text-primary"></i>
+            </a>
+            <a href="#" class="social-icon bg-white p-3 rounded-full shadow flex items-center justify-center hover:shadow-md transition-all">
+                <i class="fab fa-tiktok text-social hover:text-primary"></i>
+            </a>
+            <a href="#" class="social-icon bg-white p-3 rounded-full shadow flex items-center justify-center hover:shadow-md transition-all">
+                <i class="fab fa-pinterest-p text-social hover:text-primary"></i>
+            </a>
+        </div>
+
+        <!-- Categorías horizontales mejoradas -->
+        <section class="mb-12">
+            <h3 class="text-lg font-serif text-secondary mb-4 ml-2">Colecciones:</h3>
+            <div class="categories-scroll flex space-x-3 pb-4 overflow-x-auto">
+                <button class="category-btn flex-shrink-0 bg-white rounded-full px-4 py-2 shadow-sm hover:bg-primary hover:text-white transition-all active:scale-95" data-category="all">
+                    Todas
+                </button>
+                <button class="category-btn flex-shrink-0 bg-white rounded-full px-4 py-2 shadow-sm hover:bg-primary hover:text-white transition-all active:scale-95" data-category="rings">
+                    <i class="fas fa-ring mr-1"></i> Anillos
+                </button>
+                <button class="category-btn flex-shrink-0 bg-white rounded-full px-4 py-2 shadow-sm hover:bg-primary hover:text-white transition-all active:scale-95" data-category="necklaces">
+                    <i class="fas fa-gem mr-1"></i> Collares
+                </button>
+                <button class="category-btn flex-shrink-0 bg-white rounded-full px-4 py-2 shadow-sm hover:bg-primary hover:text-white transition-all active:scale-95" data-category="earrings">
+                    <i class="fas fa-heart mr-1"></i> Aretes
+                </button>
+                <button class="category-btn flex-shrink-0 bg-white rounded-full px-4 py-2 shadow-sm hover:bg-primary hover:text-white transition-all active:scale-95" data-category="bracelets">
+                    <i class="fas fa-bracelet mr-1"></i> Pulseras
+                </button>
+                <button class="category-btn flex-shrink-0 bg-white rounded-full px-4 py-2 shadow-sm hover:bg-primary hover:text-white transition-all active:scale-95" data-category="couple">
+                    <i class="fas fa-heart mr-1"></i> Parejas
+                </button>
+            </div>
+        </section>
+
+        <!-- Joyas en tendencia destacadas -->
+        <section class="mb-12">
+            <div class="flex items-center justify-between mb-6">
+                <h3 class="text-xl font-romantic text-secondary">Tendencia</h3>
+                <span class="text-xs bg-primary text-white px-2 py-1 rounded-full animate-gentle-bounce">
+                    <i class="fas fa-bolt mr-1"></i> Popular
+                </span>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4" id="productsGrid">
+                <!-- Productos se generan con JavaScript -->
+            </div>
+        </section>
+
+        <!-- Banner promocional mejorado -->
+        <div class="mt-12 bg-gradient-to-r from-primary to-accent rounded-lg p-6 text-center shadow-lg relative overflow-hidden">
+            <div class="absolute -right-4 -top-4 text-white opacity-10 text-8xl">
+                <i class="fas fa-heart"></i>
+            </div>
+            <h4 class="font-romantic text-white text-xl mb-2 relative z-10">¡Oferta Especial!</h4>
+            <p class="text-white text-sm mb-4 relative z-10">15% de descuento en joyas para parejas</p>
+            <button class="bg-white text-primary px-6 py-2 rounded-full text-sm font-medium hover:bg-opacity-90 transition-all relative z-10">
+                <i class="fas fa-gift mr-2"></i> Aprovechar oferta
+            </button>
+        </div>
+
+        <!-- Testimonios elegantes -->
+        <section class="mt-12">
+            <h3 class="text-lg font-serif text-center mb-6">Historias de Amor</h3>
+            <div class="bg-white rounded-lg p-6 shadow-sm">
+                <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 rounded-full overflow-hidden mr-4 border-2 border-accent">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" 
+                             alt="Cliente satisfecho" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <h4 class="font-medium">Mariana & Alejandro</h4>
+                        <div class="flex text-yellow-400 text-xs">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-gray-600 italic">"Los anillos que compramos para nuestro aniversario son perfectos. ¡Gracias JoyShop por hacer nuestro día aún más especial!"</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer romántico -->
+    <footer class="bg-secondary text-white py-8 mt-12">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="font-romantic text-2xl mb-4">JoyShop</h3>
+            <p class="text-accent mb-6">Celebrando el amor a través de la joyería</p>
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="#" class="text-white hover:text-accent transition-colors">
+                    <i class="fab fa-whatsapp text-xl"></i>
+                </a>
+                <a href="#" class="text-white hover:text-accent transition-colors">
+                    <i class="fas fa-envelope text-xl"></i>
+                </a>
+            </div>
+            <p class="text-xs text-gray-400">© 2023 JoyShop - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <!-- Botón flotante mejorado -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="#" class="w-14 h-14 bg-whatsapp rounded-full flex items-center justify-center shadow-md hover:shadow-lg transition-all animate-float"
+           id="whatsappButton">
+            <i class="fab fa-whatsapp text-white text-2xl"></i>
+        </a>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
