@@ -1,8 +1,13 @@
+// Datos de productos mejorados con múltiples imágenes
 const products = [
     {
         name: "Anillos de Compromiso",
         price: "$2,500",
-        image: "https://images.unsplash.com/photo-1603569283847-aa295f0d016a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
+        images: [
+            "https://images.unsplash.com/photo-1603569283847-aa295f0d016a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
+            "https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
+            "https://images.unsplash.com/photo-1595781518629-47f646414cc6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+        ],
         category: "rings",
         trending: true,
         coupleItem: true,
@@ -11,7 +16,11 @@ const products = [
     {
         name: "Collares Gemelos",
         price: "$1,850",
-        image: "https://images.unsplash.com/photo-1611591437281-4608be122683?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
+        images: [
+            "https://images.unsplash.com/photo-1611591437281-4608be122683?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
+            "https://images.unsplash.com/photo-1611591437280-5de9c8c1db52?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
+            "https://images.unsplash.com/photo-1608508644127-ba99d7732fee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+        ],
         category: "necklaces",
         trending: true,
         coupleItem: true,
@@ -20,7 +29,11 @@ const products = [
     {
         name: "Aros de Perlas",
         price: "$650",
-        image: "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
+        images: [
+            "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
+            "https://images.unsplash.com/photo-1561172316-76bbc3117055?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
+            "https://images.unsplash.com/photo-1635767798638-3665e0989a0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+        ],
         category: "earrings",
         trending: true,
         coupleItem: false,
@@ -29,13 +42,18 @@ const products = [
     {
         name: "Pulseras Enlazadas",
         price: "$1,200",
-        image: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
+        images: [
+            "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
+            "https://images.unsplash.com/photo-1611605698323-b1e99cfd37ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
+            "https://images.unsplash.com/photo-1618403088890-3d9ff6f4c8b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+        ],
         category: "bracelets",
         trending: true,
         coupleItem: true,
         badge: "Edición Limitada"
     }
 ];
+
 
 // Función para renderizar productos
 function renderProducts(filterCategory = 'all') {
@@ -50,24 +68,24 @@ function renderProducts(filterCategory = 'all') {
     
     filteredProducts.forEach((product, index) => {
         const productCard = document.createElement('div');
-        productCard.className = product-card bg-white rounded-lg overflow-hidden shadow-sm relative transition-all duration-300 hover:shadow-md;
-        productCard.style.animationDelay = ${index * 0.1}s;
+        productCard.className = `product-card bg-white rounded-lg overflow-hidden shadow-sm relative transition-all duration-300 hover:shadow-md`;
+        productCard.style.animationDelay = `${index * 0.1}s`;
         
         // Badge destacado
-        const badge = product.badge ? 
+        const badge = product.badge ? `
             <span class="absolute top-2 right-2 bg-primary text-white text-xs px-2 py-1 rounded-full animate-gentle-bounce">
                 ${product.badge}
             </span>
-         : '';
+        ` : '';
         
         // Indicador para parejas
-        const coupleIndicator = product.coupleItem ? 
+        const coupleIndicator = product.coupleItem ? `
             <span class="absolute top-2 left-2 bg-love text-white text-xs px-2 py-1 rounded-full flex items-center">
                 <i class="fas fa-heart mr-1"></i> Pareja
             </span>
-         : '';
+        ` : '';
         
-        productCard.innerHTML = 
+        productCard.innerHTML = `
             ${badge}
             ${coupleIndicator}
             <div class="aspect-square overflow-hidden">
@@ -81,7 +99,7 @@ function renderProducts(filterCategory = 'all') {
                     <i class="fas fa-info-circle mr-1"></i> Detalles
                 </button>
             </div>
-        ;
+        `;
         
         productCard.addEventListener('click', () => {
             orderProduct(product.name, product.price);
@@ -133,7 +151,7 @@ function setupWhatsAppButton() {
         e.preventDefault();
         const phone = "51928669585";
         const message = "¡Hola JoyShop! Estoy interesado/a en sus productos, ¿me podrían ayudar?";
-        window.open(https://wa.me/${phone}?text=${encodeURIComponent(message)}, '_blank');
+        window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
     });
 }
 
