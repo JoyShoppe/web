@@ -79,3 +79,127 @@ footer {
         margin-right: 0.25rem;
     }
 }
+/* Estilos para el carrusel con flechas mejoradas */
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.carousel-item {
+    flex-shrink: 0;
+}
+
+/* Estilos para las flechas de navegación mejoradas */
+.carousel-arrow {
+    opacity: 0.9;
+    transition: all 0.2s ease;
+    border: 2px solid white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-arrow:hover {
+    transform: translateY(-50%) scale(1.1);
+    opacity: 1;
+}
+
+.carousel-arrow.arrow-click {
+    transform: translateY(-50%) scale(0.95);
+}
+
+/* Inicialmente ocultas en móvil, siempre visibles en escritorio */
+@media (max-width: 768px) {
+    .carousel-arrow {
+        opacity: 0;
+    }
+    
+    .carousel-arrow.arrow-visible {
+        opacity: 0.9;
+    }
+    
+    /* En móvil, mostrar siempre las flechas */
+    .carousel-container:hover .carousel-arrow {
+        opacity: 0.9;
+    }
+}
+
+/* En escritorio, siempre visibles */
+@media (min-width: 769px) {
+    .carousel-arrow {
+        opacity: 0.9;
+    }
+}
+
+/* Animación pulsante para las flechas */
+@keyframes pulse-arrow {
+    0% { transform: translateY(-50%) scale(1); }
+    50% { transform: translateY(-50%) scale(1.05); }
+    100% { transform: translateY(-50%) scale(1); }
+}
+
+.carousel-container:hover .carousel-arrow {
+    animation: pulse-arrow 1.5s infinite;
+}
+
+.carousel-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.carousel-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.carousel-dot.active {
+    background-color: #c0a062;
+    transform: scale(1.2);
+}
+
+/* Contador de posición */
+.carousel-counter {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-weight: bold;
+    border-radius: 12px;
+    padding: 2px 8px;
+}
+
+/* Indicador visual de deslizamiento */
+.swipe-indicator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 20px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.swipe-indicator.visible {
+    opacity: 1;
+}
+
+/* Animación mejorada para el botón de WhatsApp */
+.order-btn {
+    transition: all 0.3s ease;
+}
+
+.order-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(18, 140, 126, 0.3);
+}
