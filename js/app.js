@@ -1,26 +1,21 @@
-// Datos de productos mejorados con múltiples imágenes
 const products = [
     {
-        name: "Anillos de Compromiso",
-        price: "$2,500",
+        name: "Maquillaje",
         images: [
-            "https://images.unsplash.com/photo-1603569283847-aa295f0d016a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
-            "https://i.blogs.es/f72c9a/multas-fabricantes-coches-portada/200_200.jpeg",
-            "https://images.unsplash.com/photo-1595781518629-47f646414cc6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
-            // Añade más imágenes aquí
-            "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
-            "https://images.unsplash.com/photo-1561172316-76bbc3117055?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+            'https://i.ibb.co/x0NhPnR/Rimel.jpg ',
+            "https://i.ibb.co/XrdyxgCP/Imagen-de-Whats-App-2025-04-01-a-las-18-17-18-21498e97.jpg",
+            "https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/falabellaPE/19917565_1/w=800,h=800,fit=pad",
+            "img\Rimel.jpg",
+            "",
+            ""
         ],
         category: "rings",
         trending: true,
         coupleItem: true,
         badge: "Nuevo"
     },
-    // ... otros productos
-
     {
         name: "Collares Gemelos",
-        price: "$1,850",
         images: [
             "https://images.unsplash.com/photo-1611591437281-4608be122683?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
             "https://images.unsplash.com/photo-1611591437280-5de9c8c1db52?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
@@ -33,7 +28,7 @@ const products = [
     },
     {
         name: "Aros de Perlas",
-        price: "$650",
+
         images: [
             "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
             "https://images.unsplash.com/photo-1561172316-76bbc3117055?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
@@ -45,8 +40,40 @@ const products = [
         badge: "Oferta"
     },
     {
+        name: "Aros de Diamantes",
+        images: [
+            "https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
+            "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+        ],
+        category: "earrings",
+        trending: true,
+        coupleItem: false,
+        badge: "Nuevo"
+    },
+    {
+        name: "Anillos de Plata",
+        images: [
+            "https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+        ],
+        category: "rings",
+        trending: true,
+        coupleItem: false,
+        badge: "Oferta"
+    },
+    {
+        name: "Collar de Corazón",
+                images: [
+            "https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
+            "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+        ],
+        category: "necklaces",
+        trending: true,
+        coupleItem: true,
+        badge: "Popular"
+    },
+    {
         name: "Pulseras Enlazadas",
-        price: "$1,200",
+      
         images: [
             "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
             "https://images.unsplash.com/photo-1611605698323-b1e99cfd37ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
@@ -59,8 +86,12 @@ const products = [
     }
 ];
 
+let currentPage = 1;
+const productsPerPage = 6;
+let currentFilter = 'all';
 
 function renderProducts(filterCategory = 'all') {
+    currentFilter = filterCategory;
     const productsGrid = document.getElementById('productsGrid');
     productsGrid.innerHTML = '';
     
@@ -70,29 +101,30 @@ function renderProducts(filterCategory = 'all') {
         ? products.filter(p => p.coupleItem)
         : products.filter(p => p.category === filterCategory);
     
-    filteredProducts.forEach((product, index) => {
+    const startIndex = (currentPage - 1) * productsPerPage;
+    const endIndex = startIndex + productsPerPage;
+    const paginatedProducts = filteredProducts.slice(startIndex, endIndex);
+    
+    paginatedProducts.forEach((product, index) => {
         const productCard = document.createElement('div');
         productCard.className = `product-card bg-white rounded-lg overflow-hidden shadow-sm relative transition-all duration-300 hover:shadow-md`;
         productCard.style.animationDelay = `${index * 0.1}s`;
         
-        // Badge destacado
         const badge = product.badge ? `
             <span class="absolute top-2 right-2 bg-primary text-white text-xs px-2 py-1 rounded-full animate-gentle-bounce">
                 ${product.badge}
             </span>
         ` : '';
         
-        // Indicador para parejas
         const coupleIndicator = product.coupleItem ? `
             <span class="absolute top-2 left-2 bg-love text-white text-xs px-2 py-1 rounded-full flex items-center">
                 <i class="fas fa-heart mr-1"></i> Pareja
             </span>
         ` : '';
         
-        // Contenido de imágenes (diferente según cantidad)
+    
         let imagesContent;
         if (product.images.length > 1) {
-            // Slider para múltiples imágenes
             const sliderId = `slider-${index}`;
             const dotsId = `dots-${index}`;
             
@@ -114,10 +146,8 @@ function renderProducts(filterCategory = 'all') {
                 </div>
             `;
             
-            // Configurar el slider después de añadir al DOM
             setTimeout(() => setupSlider(sliderId, dotsId), 0);
         } else {
-            // Imagen única (sin slider)
             imagesContent = `
                 <div class="aspect-square overflow-hidden">
                     <img src="${product.images[0]}" alt="${product.name}" 
@@ -132,19 +162,79 @@ function renderProducts(filterCategory = 'all') {
             ${imagesContent}
             <div class="p-3 text-center">
                 <h4 class="font-medium text-secondary truncate">${product.name}</h4>
-                <p class="text-primary font-bold mt-1">${product.price}</p>
                 <a href="https://wa.me/51928669585?text=¡Hola JoyShop! Estoy interesado en comprar: ${encodeURIComponent(product.name)} (${encodeURIComponent(product.price)})" 
                    target="_blank"
                    class="mt-2 inline-block text-xs bg-whatsapp text-white px-3 py-1 rounded-full hover:bg-opacity-90 transition-colors">
-                    <i class="fab fa-whatsapp mr-1"></i> Pedir por WhatsApp
+                    <i class="fab fa-whatsapp mr-1"></i> Hacer pedido
+                </a>
+                <a href="https://wa.me/51928669585?text=¡Hola JoyShop! Estoy interesado en comprar: ${encodeURIComponent(product.name)} (${encodeURIComponent(product.price)})" 
+                   target="_blank"
+                   class="mt-2 inline-block text-xs bg-whatsapp text-white px-3 py-1 rounded-full hover:bg-opacity-90 transition-colors">
+                   Visulizar catalogo
                 </a>
             </div>
+             <div class="p-3 text-center">
+            </div>
+            
         `;
         
         productsGrid.appendChild(productCard);
     });
+    
+    updatePaginationControls(filteredProducts.length);
+    
+    updateProductsCount(filteredProducts.length, startIndex, endIndex);
 }
-// Función para animar contador
+
+function updatePaginationControls(totalProducts) {
+    const paginationControls = document.getElementById('paginationControls');
+    if (!paginationControls) return;
+    
+    const totalPages = Math.ceil(totalProducts / productsPerPage);
+    
+    paginationControls.innerHTML = `
+        <button onclick="changePage(-1)" ${currentPage === 1 ? 'disabled' : ''} 
+            class="px-3 py-1 bg-white rounded-md border ${currentPage === 1 ? 'opacity-50 cursor-not-allowed' : 'hover:bg-primary hover:text-white'}">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        
+        <span class="text-sm">Página ${currentPage} de ${totalPages}</span>
+        
+        <button onclick="changePage(1)" ${currentPage === totalPages || totalPages === 0 ? 'disabled' : ''} 
+            class="px-3 py-1 bg-white rounded-md border ${currentPage === totalPages || totalPages === 0 ? 'opacity-50 cursor-not-allowed' : 'hover:bg-primary hover:text-white'}">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    `;
+}
+
+function updateProductsCount(totalProducts, startIndex, endIndex) {
+    const productsCountElement = document.getElementById('productsCount');
+    if (!productsCountElement) return;
+    
+    if (totalProducts === 0) {
+        productsCountElement.textContent = "No se encontraron productos";
+        return;
+    }
+    
+    
+}
+
+function changePage(step) {
+    const filteredProducts = currentFilter === 'all' 
+        ? products.filter(p => p.trending)
+        : currentFilter === 'couple'
+        ? products.filter(p => p.coupleItem)
+        : products.filter(p => p.category === currentFilter);
+    
+    const totalPages = Math.ceil(filteredProducts.length / productsPerPage);
+    
+    const newPage = currentPage + step;
+    if (newPage > 0 && newPage <= totalPages) {
+        currentPage = newPage;
+        renderProducts(currentFilter);
+    }
+}
+
 function animateCounter() {
     const counter = document.querySelector('.counter');
     const target = parseInt(counter.getAttribute('data-target'));
@@ -166,7 +256,6 @@ function animateCounter() {
     requestAnimationFrame(updateCounter);
 }
 
-// Configurar botones de categorías
 function setupCategoryButtons() {
     const categoryBtns = document.querySelectorAll('.category-btn');
     
@@ -175,12 +264,12 @@ function setupCategoryButtons() {
             categoryBtns.forEach(b => b.classList.remove('bg-primary', 'text-white'));
             this.classList.add('bg-primary', 'text-white');
             const category = this.getAttribute('data-category');
+            currentPage = 1; 
             renderProducts(category);
         });
     });
 }
 
-// Configurar botón de WhatsApp
 function setupWhatsAppButton() {
     document.getElementById('whatsappButton').addEventListener('click', function(e) {
         e.preventDefault();
@@ -189,19 +278,6 @@ function setupWhatsAppButton() {
         window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
     });
 }
-
-// Inicialización
-document.addEventListener('DOMContentLoaded', () => {
-    renderProducts();
-    animateCounter();
-    setupCategoryButtons();
-    
-    // Activar primera categoría por defecto
-    document.querySelector('.category-btn[data-category="all"]').classList.add('bg-primary', 'text-white');
-    
-    // Observar cambios en los sliders de imágenes
-    setupImageSliders();
-});
 
 function setupImageSliders() {
     const sliders = document.querySelectorAll('.product-card .flex.overflow-x-auto');
@@ -226,81 +302,95 @@ function setupImageSliders() {
         });
     });
 }
+
 function setupSlider(sliderId, dotsId) {
     const slider = document.getElementById(sliderId);
     const dotsContainer = document.getElementById(dotsId);
     const dots = dotsContainer.querySelectorAll('.dot');
     const slides = slider.querySelectorAll('div');
-    const slideWidth = slider.clientWidth;
+    const slideCount = slides.length;
+    const slideWidth = slides[0].clientWidth;
     
     let currentSlide = 0;
-    
-    // Configurar eventos para los puntos
+    let isDragging = false;
+    let startPos = 0;
+    let currentTranslate = 0;
+    let prevTranslate = 0;
+    let animationID = 0;
+    let isScrolling = false;
+
+    slider.style.scrollSnapType = 'x mandatory';
+    slides.forEach(slide => {
+        slide.style.scrollSnapAlign = 'start';
+        slide.style.flexShrink = '0';
+        slide.style.width = '100%';
+    });
+
     dots.forEach((dot, index) => {
         dot.addEventListener('click', () => {
-            currentSlide = index;
-            updateSlider();
+            if (index === currentSlide) return;
+            goToSlide(index);
         });
     });
-    
-    // Configurar eventos de deslizamiento táctil
-    let startX, moveX;
-    let isDragging = false;
-    
-    slider.addEventListener('mousedown', (e) => {
+
+    slider.addEventListener('touchstart', touchStart);
+    slider.addEventListener('touchmove', touchMove);
+    slider.addEventListener('touchend', touchEnd);
+
+    slider.addEventListener('mousedown', touchStart);
+    slider.addEventListener('mousemove', touchMove);
+    slider.addEventListener('mouseup', touchEnd);
+    slider.addEventListener('mouseleave', touchEnd);
+    slides.forEach(slide => {
+        slide.addEventListener('dragstart', (e) => e.preventDefault());
+    });
+    function touchStart(e) {
+        if (isScrolling) return;
         isDragging = true;
-        startX = e.pageX - slider.offsetLeft;
-        slider.style.scrollBehavior = 'auto';
-    });
-    
-    slider.addEventListener('mousemove', (e) => {
-        if (!isDragging) return;
-        e.preventDefault();
-        moveX = e.pageX - slider.offsetLeft;
-        const walk = (moveX - startX) * 1.5;
-        slider.scrollLeft = slider.scrollLeft - walk;
-    });
-    
-    slider.addEventListener('mouseup', () => {
-        isDragging = false;
-        slider.style.scrollBehavior = 'smooth';
-        updateCurrentSlide();
-    });
-    
-    slider.addEventListener('mouseleave', () => {
-        isDragging = false;
-    });
-    
-    // Para dispositivos táctiles
-    slider.addEventListener('touchstart', (e) => {
-        startX = e.touches[0].pageX - slider.offsetLeft;
-        slider.style.scrollBehavior = 'auto';
-    });
-    
-    slider.addEventListener('touchmove', (e) => {
-        e.preventDefault();
-        moveX = e.touches[0].pageX - slider.offsetLeft;
-        const walk = (moveX - startX) * 1.5;
-        slider.scrollLeft = slider.scrollLeft - walk;
-    });
-    
-    slider.addEventListener('touchend', () => {
-        slider.style.scrollBehavior = 'smooth';
-        updateCurrentSlide();
-    });
-    
-    function updateCurrentSlide() {
-        const scrollPosition = slider.scrollLeft;
-        currentSlide = Math.round(scrollPosition / slideWidth);
-        updateSlider();
+        startPos = getPositionX(e);
+        prevTranslate = currentTranslate;
+        cancelAnimationFrame(animationID);
+        slider.style.scrollSnapType = 'none';
+        slider.style.cursor = 'grabbing';
     }
-    
-    function updateSlider() {
-        slider.scrollTo({
-            left: currentSlide * slideWidth,
-            behavior: 'smooth'
-        });
-        
+    function touchMove(e) {
+        if (!isDragging || isScrolling) return;
+        const currentPosition = getPositionX(e);
+        currentTranslate = prevTranslate + currentPosition - startPos;
+        if (currentTranslate > 0) {
+            currentTranslate = 0;
+        } else if (currentTranslate < -(slideWidth * (slideCount - 1))) {
+            currentTranslate = -(slideWidth * (slideCount - 1));
+        }
+        slider.style.transform = `translateX(${currentTranslate}px)`;
+    }
+    function touchEnd() {
+        if (!isDragging || isScrolling) return;
+        isDragging = false;
+        slider.style.cursor = 'grab';
+                const movedBy = currentTranslate - prevTranslate;
+        if (movedBy < -50 && currentSlide < slideCount - 1) {
+            currentSlide += 1;
+        } else if (movedBy > 50 && currentSlide > 0) {
+            currentSlide -= 1;
+        }
+        slider.style.scrollSnapType = 'x mandatory';
+        goToSlide(currentSlide);
+    }
+    function goToSlide(index) {
+        if (isScrolling) return;
+        isScrolling = true;
+        currentSlide = index;
+                currentTranslate = - (slideWidth * currentSlide);
+        slider.style.transform = `translateX(${currentTranslate}px)`;
+                updateDots();
+                setTimeout(() => {
+                                slider.scrollLeft = slideWidth * currentSlide;
+            slider.style.transform = 'none';
+            isScrolling = false;
+        }, 300);
+    }
+    function updateDots() {
         dots.forEach((dot, index) => {
             if (index === currentSlide) {
                 dot.classList.add('bg-primary', 'bg-opacity-100');
@@ -311,9 +401,18 @@ function setupSlider(sliderId, dotsId) {
             }
         });
     }
-    
-    // Actualizar cuando cambie el tamaño de la ventana
-    window.addEventListener('resize', () => {
-        updateSlider();
-    });
+    function getPositionX(e) {
+        return e.type.includes('mouse') ? e.pageX : e.touches[0].clientX;
+    }
+    updateDots();
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    renderProducts();
+    animateCounter();
+    setupCategoryButtons();
+    setupWhatsAppButton();
+        document.querySelector('.category-btn[data-category="all"]').classList.add('bg-primary', 'text-white');
+    
+    setupImageSliders();
+});
