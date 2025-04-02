@@ -49,7 +49,6 @@
     <link rel="stylesheet" href="css/custom.css">
 </head>
 <body class="font-sans bg-light text-dark">
-    <!-- Header elegante -->
     <header class="bg-white py-4 px-6 shadow-sm sticky top-0 z-50 animate-fade-in">
         <div class="container mx-auto flex justify-between items-center">
             <div class="flex items-center">
@@ -63,10 +62,10 @@
     </header>
 
     <main class="container mx-auto px-4 py-8 max-w-4xl">
-        <!-- Sección hero con contador animado -->
+
         <section class="text-center mb-12 animate-fade-in">
             <div class="w-24 h-24 rounded-full border-2 border-accent mx-auto overflow-hidden mb-4 shadow-md">
-                <img src="" 
+                <img src="img/Logo.jpg" 
                      alt="Logo" class="w-full h-full object-cover">
             </div>
             <h2 class="text-2xl font-romantic text-secondary mb-2">@JoyShop</h2>
@@ -81,8 +80,6 @@
                 </p>
             </div>
         </section>
-
-        <!-- Redes sociales elegantes -->
         <div class="grid grid-cols-4 gap-2 mb-12">
             <a href="#" class="social-icon bg-white p-3 rounded-full shadow flex items-center justify-center hover:shadow-md transition-all">
                 <i class="fab fa-instagram text-social hover:text-primary"></i>
@@ -96,48 +93,27 @@
             <a href="#" class="social-icon bg-white p-3 rounded-full shadow flex items-center justify-center hover:shadow-md transition-all">
                 <i class="fab fa-pinterest-p text-social hover:text-primary"></i>
             </a>
-        </div>
+        </div> 
 
-        <!-- Categorías horizontales mejoradas -->
-        <section class="mb-12">
-            <h3 class="text-lg font-serif text-secondary mb-4 ml-2">Colecciones:</h3>
-            <div class="categories-scroll flex space-x-3 pb-4 overflow-x-auto">
-                <button class="category-btn flex-shrink-0 bg-white rounded-full px-4 py-2 shadow-sm hover:bg-primary hover:text-white transition-all active:scale-95" data-category="all">
-                    Todas
-                </button>
-                <button class="category-btn flex-shrink-0 bg-white rounded-full px-4 py-2 shadow-sm hover:bg-primary hover:text-white transition-all active:scale-95" data-category="rings">
-                    <i class="fas fa-ring mr-1"></i> Anillos
-                </button>
-                <button class="category-btn flex-shrink-0 bg-white rounded-full px-4 py-2 shadow-sm hover:bg-primary hover:text-white transition-all active:scale-95" data-category="necklaces">
-                    <i class="fas fa-gem mr-1"></i> Collares
-                </button>
-                <button class="category-btn flex-shrink-0 bg-white rounded-full px-4 py-2 shadow-sm hover:bg-primary hover:text-white transition-all active:scale-95" data-category="earrings">
-                    <i class="fas fa-heart mr-1"></i> Aretes
-                </button>
-                <button class="category-btn flex-shrink-0 bg-white rounded-full px-4 py-2 shadow-sm hover:bg-primary hover:text-white transition-all active:scale-95" data-category="bracelets">
-                    <i class="fas fa-bracelet mr-1"></i> Pulseras
-                </button>
-                <button class="category-btn flex-shrink-0 bg-white rounded-full px-4 py-2 shadow-sm hover:bg-primary hover:text-white transition-all active:scale-95" data-category="couple">
-                    <i class="fas fa-heart mr-1"></i> Parejas
-                </button>
-            </div>
+       
         </section>
-
-        <!-- Joyas en tendencia destacadas -->
         <section class="mb-12">
             <div class="flex items-center justify-between mb-6">
-                <h3 class="text-xl font-romantic text-secondary">Tendencia</h3>
-                <span class="text-xs bg-primary text-white px-2 py-1 rounded-full animate-gentle-bounce">
-                    <i class="fas fa-bolt mr-1"></i> Popular
-                </span>
+                <h3 class="text-xl font-romantic text-secondary">Categorias</h3>
+                <div class="flex items-center">
+                    <span id="productsCount" class="text-xs text-gray-500 mr-4"></span>
+                    <span class="text-xs bg-primary text-white px-2 py-1 rounded-full animate-gentle-bounce">
+                        <i class="fas fa-bolt mr-1"></i> Popular
+                    </span>
+                </div>
             </div>
-
+        
             <div class="grid grid-cols-2 gap-4" id="productsGrid">
-               
+            </div>
+            
+            <div class="flex justify-center items-center mt-6 gap-4" id="paginationControls">
             </div>
         </section>
-
-        <!-- Banner promocional mejorado -->
         <div class="mt-12 bg-gradient-to-r from-primary to-accent rounded-lg p-6 text-center shadow-lg relative overflow-hidden">
             <div class="absolute -right-4 -top-4 text-white opacity-10 text-8xl">
                 <i class="fas fa-heart"></i>
@@ -150,8 +126,6 @@
                 </a>
             </button>
         </div>
-
-        <!-- Testimonios elegantes -->
         <section class="mt-12">
             <h3 class="text-lg font-serif text-center mb-6">Historias de Amor</h3>
             <div class="bg-white rounded-lg p-6 shadow-sm">
@@ -175,8 +149,6 @@
             </div>
         </section>
     </main>
-
-    <!-- Footer romántico -->
     <footer class="bg-secondary text-white py-8 mt-12">
         <div class="container mx-auto px-4 text-center">
             <h3 class="font-romantic text-2xl mb-4">JoyShop</h3>
@@ -192,8 +164,6 @@
             <p class="text-xs text-gray-400">© 2025 JoyShop - Todos los derechos reservados</p>
         </div>
     </footer>
-
-    <!-- Botón flotante mejorado -->
     <div class="fixed bottom-6 right-6 z-50">
         <a href="https://wa.me/51928669585" target="_blank" class="w-14 h-14 bg-whatsapp rounded-full flex items-center justify-center shadow-md hover:shadow-lg transition-all animate-float">
             <i class="fab fa-whatsapp text-white text-2xl"></i>
