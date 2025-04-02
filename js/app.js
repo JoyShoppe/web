@@ -303,108 +303,44 @@ function setupImageSliders() {
     });
 }
 
+// Elimina la función setupSlider completa y reemplázala por esta versión simplificada:
 function setupSlider(sliderId, dotsId) {
     const slider = document.getElementById(sliderId);
     const dotsContainer = document.getElementById(dotsId);
     const dots = dotsContainer.querySelectorAll('.dot');
-    const slides = slider.querySelectorAll('div');
-    const slideCount = slides.length;
-    const slideWidth = slides[0].clientWidth;
     
-    let currentSlide = 0;
-    let isDragging = false;
-    let startPos = 0;
-    let currentTranslate = 0;
-    let prevTranslate = 0;
-    let animationID = 0;
-    let isScrolling = false;
-
+    // Configuración básica del slider
     slider.style.scrollSnapType = 'x mandatory';
-    slides.forEach(slide => {
+    slider.querySelectorAll('div').forEach(slide => {
         slide.style.scrollSnapAlign = 'start';
-        slide.style.flexShrink = '0';
-        slide.style.width = '100%';
     });
 
-    dots.forEach((dot, index) => {
-        dot.addEventListener('click', () => {
-            if (index === currentSlide) return;
-            goToSlide(index);
-        });
-    });
-
-    slider.addEventListener('touchstart', touchStart);
-    slider.addEventListener('touchmove', touchMove);
-    slider.addEventListener('touchend', touchEnd);
-
-    slider.addEventListener('mousedown', touchStart);
-    slider.addEventListener('mousemove', touchMove);
-    slider.addEventListener('mouseup', touchEnd);
-    slider.addEventListener('mouseleave', touchEnd);
-    slides.forEach(slide => {
-        slide.addEventListener('dragstart', (e) => e.preventDefault());
-    });
-    function touchStart(e) {
-        if (isScrolling) return;
-        isDragging = true;
-        startPos = getPositionX(e);
-        prevTranslate = currentTranslate;
-        cancelAnimationFrame(animationID);
-        slider.style.scrollSnapType = 'none';
-        slider.style.cursor = 'grabbing';
-    }
-    function touchMove(e) {
-        if (!isDragging || isScrolling) return;
-        const currentPosition = getPositionX(e);
-        currentTranslate = prevTranslate + currentPosition - startPos;
-        if (currentTranslate > 0) {
-            currentTranslate = 0;
-        } else if (currentTranslate < -(slideWidth * (slideCount - 1))) {
-            currentTranslate = -(slideWidth * (slideCount - 1));
-        }
-        slider.style.transform = `translateX(${currentTranslate}px)`;
-    }
-    function touchEnd() {
-        if (!isDragging || isScrolling) return;
-        isDragging = false;
-        slider.style.cursor = 'grab';
-                const movedBy = currentTranslate - prevTranslate;
-        if (movedBy < -50 && currentSlide < slideCount - 1) {
-            currentSlide += 1;
-        } else if (movedBy > 50 && currentSlide > 0) {
-            currentSlide -= 1;
-        }
-        slider.style.scrollSnapType = 'x mandatory';
-        goToSlide(currentSlide);
-    }
-    function goToSlide(index) {
-        if (isScrolling) return;
-        isScrolling = true;
-        currentSlide = index;
-                currentTranslate = - (slideWidth * currentSlide);
-        slider.style.transform = `translateX(${currentTranslate}px)`;
-                updateDots();
-                setTimeout(() => {
-                                slider.scrollLeft = slideWidth * currentSlide;
-            slider.style.transform = 'none';
-            isScrolling = false;
-        }, 300);
-    }
-    function updateDots() {
+    // Actualizar puntos indicadores al hacer scroll
+    slider.addEventListener('scroll', () => {
+        const scrollPosition = slider.scrollLeft;
+        const slideWidth = slider.clientWidth;
+        const currentSlide = Math.round(scrollPosition / slideWidth);
+        
         dots.forEach((dot, index) => {
             if (index === currentSlide) {
                 dot.classList.add('bg-primary', 'bg-opacity-100');
                 dot.classList.remove('bg-opacity-60');
             } else {
                 dot.classList.remove('bg-primary', 'bg-opacity-100');
-                dot.classList.add('bg-white', 'bg-opacity-60');
+                dot.classList.add('bg-opacity-60');
             }
         });
-    }
-    function getPositionX(e) {
-        return e.type.includes('mouse') ? e.pageX : e.touches[0].clientX;
-    }
-    updateDots();
+    });
+
+    // Configurar eventos para los puntos indicadores
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            slider.scrollTo({
+                left: index * slider.clientWidth,
+                behavior: 'smooth'
+            });
+        });
+    });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
